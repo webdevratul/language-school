@@ -2,7 +2,7 @@ import { AiFillCaretRight } from "react-icons/ai";
 
 const Packages = () => {
     return (
-        <div className="my-10 py-10 mx-auto bg-[#F6F6F6]">
+        <div className="py-10 mx-auto bg-[#F6F6F6]">
             <h2 className="text-center text-6xl font-bold my-20">Premium Price Packages</h2>
             <div className="grid grid-cols-3 w-[60%] mx-auto gap-x-4 mb-14">
                 <div className=" flex flex-col gap-y-4 bg-white py-14 px-6 cursor-pointer rounded-lg shadow-2xl">

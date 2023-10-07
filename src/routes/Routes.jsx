@@ -6,7 +6,8 @@ import Home from "../pages/Home";
 import Root from "../layouts/Root";
 import Services from "../components/pages/Services";
 import Packages from "../components/pages/Packages";
-import Contact from "../components/pages/Contact";
+import Subscribe from "../components/pages/Subscribe";
+
 
 
 const router = createBrowserRouter([
@@ -27,8 +28,8 @@ const router = createBrowserRouter([
                 element: <Packages></Packages>,
             },
             {
-                path: "/contact",
-                element: <Contact></Contact>,
+                path: "/subscribe",
+                element: <Subscribe>s</Subscribe>,
             }
         ]
     },

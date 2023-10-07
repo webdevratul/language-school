@@ -8,11 +8,11 @@ import { GoLocation, GoDeviceMobile } from "react-icons/go";
 const Navbar = () => {
 
     const navLink = <>
-        <li className="mx-2"><NavLink to="/">Home</NavLink></li>
-        <li className="mx-2"><NavLink to="/about">About</NavLink></li>
-        <li className="mx-2"><NavLink to="/services">Services</NavLink></li>
-        <li className="mx-2"><NavLink to="/packages">Packages</NavLink></li>
-        <li className="mx-2"><NavLink to="/contact">Contact</NavLink></li>
+        <li className="mx-1"><NavLink to="/">Home</NavLink></li>
+        <li className="mx-1"><NavLink to="/about">About</NavLink></li>
+        <li className="mx-1"><NavLink to="/services">Services</NavLink></li>
+        <li className="mx-1"><NavLink to="/packages">Packages</NavLink></li>
+        <li className="mx-1"><NavLink to="/subscribe">Subscribe</NavLink></li>
     </>
 
     return (
@@ -73,4 +73,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
 
