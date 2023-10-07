@@ -33,7 +33,7 @@ const Services = () => {
                         <img className="rounded-lg" src={service.image} alt="" />
                         <div className="my-4">
                             <p className="font-bold text-2xl">{service.name}</p>
-                            <p className="pt-2 font-bold">Price: {service.price}</p>
+                            <p className="pt-2 font-bold font-sans text-xl">Price: ${service.price}</p>
                             <p className="py-4">{service.description}</p>
                         </div>
                         <button className="bg-yellow-600 py-2 px-4 text-white font-bold rounded-lg">View Details</button>

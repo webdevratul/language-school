@@ -2,6 +2,7 @@ import slider1 from "../../assets/images/slider1.jpg";
 import slider2 from "../../assets/images/slider2.jpg";
 import slider3 from "../../assets/images/slider3.jpg";
 import "../../assets/css/pages/Slider.css";
+import { AiFillCaretRight } from "react-icons/ai";
 
 const Slider = () => {
     return (
@@ -38,16 +39,31 @@ const Slider = () => {
                     for Online <span className="text-[#FFD32B]">language School</span>
                 </h2>
                 <div className="flex items-center mt-10">
-                    <hr className="bg-[#FFD32B] w-[20%] h-2" />
-                    <hr className="w-[65%]" />
+                    <hr className="bg-[#FFD32B] w-[10%] h-2" />
+                    <hr className="w-[70%]" />
                 </div>
+                <div className="mt-10 flex flex-col gap-y-4">
+                    <div className="flex items-center">
+                        <AiFillCaretRight className="text-3xl text-[#FFD32B]"></AiFillCaretRight>
+                        <p className="text-xl ml-4">No Time Requirements, Study at Your Own Pace</p>
+                    </div>
+                    <div className="flex items-center">
+                        <AiFillCaretRight className="text-3xl text-[#FFD32B]"></AiFillCaretRight>
+                        <p className="text-xl ml-4">California DMV Licensed & Court Accepted</p>
+                    </div>
+                    <div className="flex items-center">
+                        <AiFillCaretRight className="text-3xl text-[#FFD32B]"></AiFillCaretRight>
+                        <p className="text-xl ml-4">Avoid Points & License Suspension</p>
+                    </div>
+                </div>
+
+                <button className="px-6 py-4 border-2 border-[#FFD32B] text-[#FFD32B] font-bold text-xl ml-10 mt-10">Explore More</button>
             </div>
         </div>
-
-
-
     );
 };
 
 export default Slider;
+
+
 
