@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import default_prodile from "../../assets/images/default-profile.png";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
+import { GoLocation, GoDeviceMobile } from "react-icons/go";
 
 
 const Navbar = () => {
@@ -10,12 +11,24 @@ const Navbar = () => {
         <li className="mx-4"><NavLink to="/">Home</NavLink></li>
         <li className="mx-4"><NavLink to="/about">About</NavLink></li>
         <li className="mx-4"><NavLink to="/services">Services</NavLink></li>
+        <li className="mx-4"><NavLink to="/contact">Contact</NavLink></li>
     </>
 
     return (
-        <div>
+        <div className="">
             <div className="py-6 bg-[#FFD32B] px-24 flex justify-between item-center">
-                <div className="flex gap-x-2">
+                <div className="flex gap-x-2 items-center">
+                    <p className="text-3xl h-[35px] w-[35px] rounded-full flex items-center cursor-pointer">
+                        <GoLocation className="mx-auto"></GoLocation>
+                    </p>
+                    <p className="font-bold">Brooklyn, NY 10036, United States</p>
+
+                    <p className="text-3xl h-[35px] w-[35px] rounded-full flex items-center cursor-pointer">
+                        <GoDeviceMobile className="mx-auto"></GoDeviceMobile>
+                    </p>
+                    <p className="font-bold text-[17px]">1-800-123-1234</p>
+                </div>
+                <div className="flex gap-x-4">
                     <p className="text-2xl bg-white h-[35px] w-[35px] rounded-full flex items-center cursor-pointer">
                         <AiOutlineMail className="mx-auto text-yellow-600"></AiOutlineMail>
                     </p>
@@ -25,9 +38,6 @@ const Navbar = () => {
                     <p className="text-2xl bg-white h-[35px] w-[35px] rounded-full flex items-center cursor-pointer">
                         <FaInstagram className="mx-auto text-yellow-600"></FaInstagram>
                     </p>
-                </div>
-                <div>
-                    <h2 className="text-2xl font-bold font-Pacifico text-[#2B3440]">Mahibul Islam Ratul</h2>
                 </div>
             </div>
             <div className="navbar bg-base-100 mx-auto shadow-lg px-20 py-4">
@@ -47,8 +57,9 @@ const Navbar = () => {
                         {navLink}
                     </ul>
                 </div>
-                <div className="navbar-end">
-                    <label tabIndex={0} className="btn btn-ghost btn-circle avatar mr-4">
+                <div className="navbar-end flex item-center">
+                    <h2 className="font-bold text-yellow-600 bg-white px-4 py-2 mr-2">There are no users </h2>
+                    <label tabIndex={0} className="btn btn-ghost btn-circle avatar mr-6">
                         <div className="w-10 rounded-full">
                             <img src={default_prodile} alt="" />
                         </div>
@@ -57,7 +68,6 @@ const Navbar = () => {
                 </div>
             </div>
         </div>
-
     );
 };
 
