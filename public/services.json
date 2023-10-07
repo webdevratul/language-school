@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "name": "Mandarin",
+    "image": "https://language-school.cmsmasters.net/wp-content/uploads/2015/12/Depositphotos_63889211_original.jpg",
+    "price": 19.99,
+    "description": "Mandarin is the most spoken language globally, known for its tonal nature. It's the official language of China and Taiwan, as well as one of the United Nations' official languages."
+  },
+  {
+    "id": "2",
+    "name": "Spanish",
+    "image": "https://language-school.cmsmasters.net/wp-content/uploads/2015/08/Depositphotos_46326837_original.jpg",
+    "price": 29.99,
+    "description": "Spanish is a Romance language originating in Spain and widely spoken across Latin America. It's known for its passionate sound and rich cultural diversity."
+  },
+  {
+    "id": "3",
+    "name": "English",
+    "image": "https://language-school.cmsmasters.net/wp-content/uploads/2015/12/Depositphotos_58582087_original.jpg",
+    "price": 24.99,
+    "description": "English is a global lingua franca, used as the primary language in countries like the United States, the United Kingdom, Australia, and Canada. It's known for its widespread use in business, technology, and entertainment."
+  },
+  {
+    "id": "4",
+    "name": "Hindi",
+    "image": "https://language-school.cmsmasters.net/wp-content/uploads/2015/11/Depositphotos_85241600_original.jpg",
+    "price": 39.99,
+    "description": "Hindi is one of India's official languages and is widely spoken in Northern India. It's known for its complex script and its role as a unifying language in a linguistically diverse country."
+  },
+  {
+    "id": "5",
+    "name": "Arabic",
+    "image": "https://language-school.cmsmasters.net/wp-content/uploads/2015/12/Depositphotos_72150359_original.jpg",
+    "price": 14.99,
+    "description": "Arabic is a Semitic language with various dialects spoken across the Middle East and North Africa. It's known for its beautiful calligraphy and its importance in Islamic culture."
+  },
+  {
+    "id": "6",
+    "name": "Bengali",
+    "image": "https://language-school.cmsmasters.net/wp-content/uploads/2015/07/Depositphotos_73936385_original1.jpg",
+    "price": 49.99,
+    "description": "Bengali is the official language of Bangladesh and the Indian state of West Bengal. It's known for its poetic beauty and the works of Rabindranath Tagore, a Nobel laureate in literature who wrote in Bengali."
+  }
+]
