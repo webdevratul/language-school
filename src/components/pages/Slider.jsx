@@ -34,15 +34,15 @@ const Slider = () => {
                 </div>
             </div>
             <div className="w-[60%] h-[500px] absolute top-[10%] left-[15%] text-white z-20">
-                <h2 className="text-6xl font-bold">
+                <h2 className="text-2xl lg:text-5xl font-bold">
                     Original Provider <br />
                     for Online <span className="text-[#FFD32B]">language School</span>
                 </h2>
-                <div className="flex items-center mt-10">
+                <div className="flex items-center mt-2 md:mt-5">
                     <hr className="bg-[#FFD32B] w-[10%] h-2" />
                     <hr className="w-[70%]" />
                 </div>
-                <div className="mt-10 flex flex-col gap-y-4">
+                <div className="mt-2 md:mt-10 flex flex-col gap-y-4">
                     <div className="flex items-center">
                         <AiFillCaretRight className="text-3xl text-[#FFD32B]"></AiFillCaretRight>
                         <p className="text-xl ml-4">No Time Requirements, Study at Your Own Pace</p>
@@ -57,7 +57,7 @@ const Slider = () => {
                     </div>
                 </div>
 
-                <button className="px-6 py-4 border-2 border-[#FFD32B] text-[#FFD32B] font-bold text-xl ml-10 mt-10">Explore More</button>
+                <button className="px-6 py-2 md:py-4 border-2 border-[#FFD32B] text-[#FFD32B] font-bold text-xl mt-2 md:ml-10 md:mt-10">Explore More</button>
             </div>
         </div>
     );

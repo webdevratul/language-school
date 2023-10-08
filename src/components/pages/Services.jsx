@@ -19,14 +19,14 @@ const Services = () => {
     console.log(services);
 
     return (
-        <div className="w-[90%] mx-auto flex justify-between items-center m-10">
-            <div className="w-[30%]">
-                <h2 className="text-5xl font-bold">What to Expect from <br /> this Course</h2>
+        <div className="w-[100%] md:w-[90%] mx-auto flex flex-col xl:flex-row justify-between items-center m-5 xl:m-10 2xl:pl-16">
+            <div className="w-[80%] md:w-[50%] xl:w-[30%] mb-10 xl:mb-0">
+                <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold">What to Expect from <br /> this Course</h2>
                 <div className="w-[100%] h-[40vh] bg-[#FFD32B] rounded-md relative mt-20">
                     <img className="w-[100%] h-[40vh] rounded-md absolute top-[-10%] left-[8%] object-cover bg-yellow-600 p-4" src={servicesBanner} alt="" />
                 </div>
             </div>
-            <div className="grid grid-cols-3 gap-4 w-[60%]">
+            <div className="px-4 md:px-0 grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-4 w-[100%] xl:w-[60%]">
 
                 {
                     services.map((service, idx) => <div key={idx} className=" bg-yellow-50 rounded-lg shadow-2xl p-4 cursor-pointer">
