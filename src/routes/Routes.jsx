@@ -9,6 +9,8 @@ import Packages from "../components/pages/Packages";
 import Subscribe from "../components/pages/Subscribe";
 import Regsiter from "../components/pages/Register";
 import Login from "../components/pages/Login";
+import PrivateRoutes from "./PrivateRoutes";
+import ServicesDetails from "../components/pages/ServicesDetails";
 
 
 
@@ -40,7 +42,12 @@ const router = createBrowserRouter([
             {
                 path: "/login",
                 element: <Login></Login>,
-            }
+            },
+            {
+                path: '/servicesDetails/:id',
+                element: <PrivateRoutes><ServicesDetails></ServicesDetails></PrivateRoutes>,
+                loader: () => fetch("/public/services.json"),
+            },
         ]
     },
 ]);

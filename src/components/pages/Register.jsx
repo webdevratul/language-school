@@ -11,6 +11,7 @@ const Regsiter = () => {
     const [registerError, setRegisterError] = useState("");
 
     const navigate = useNavigate();
+    
 
 
     const handleRegister = e => {

@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Context } from "../../provider/Provider";
 
 
@@ -8,6 +8,8 @@ const Login = () => {
 
     const { signIn, googleSignIn } = useContext(Context);
     const [loginError, setLoginError] = useState("");
+    const location = useLocation();
+    const navigate = useNavigate();
 
 
     const handleLogin = e => {
@@ -24,6 +26,8 @@ const Login = () => {
                 const user = result.user;
                 console.log(user);
                 e.target.reset();
+                // navigate after login 
+                navigate(location?.state ? location.state : "/");
             })
             .catch((error) => {
                 setLoginError(error.message);

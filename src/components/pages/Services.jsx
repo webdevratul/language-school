@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import servicesBanner from "../../assets/images/services-banner.png";
+import { Link } from "react-router-dom";
 
 const Services = () => {
 
@@ -16,7 +17,7 @@ const Services = () => {
             })
     }, []);
 
-    
+
 
     return (
         <div className="w-[100%] md:w-[90%] mx-auto flex flex-col xl:flex-row justify-between items-center m-5 xl:m-10 2xl:pl-16">
@@ -36,7 +37,7 @@ const Services = () => {
                             <p className="pt-2 font-bold font-sans text-xl">Price: ${service.price}</p>
                             <p className="py-4">{service.description}</p>
                         </div>
-                        <button className="bg-yellow-600 py-2 px-4 text-white font-bold rounded-lg">View Details</button>
+                        <button className="bg-yellow-600 py-2 px-4 text-white font-bold rounded-lg"> <Link to={`/servicesDetails/${service.id}`}>View Details</Link> </button>
                     </div>)
                 }
             </div>
