@@ -16,7 +16,7 @@ const Services = () => {
             })
     }, []);
 
-    console.log(services);
+    
 
     return (
         <div className="w-[100%] md:w-[90%] mx-auto flex flex-col xl:flex-row justify-between items-center m-5 xl:m-10 2xl:pl-16">

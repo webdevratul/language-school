@@ -3,6 +3,7 @@ import slider2 from "../../assets/images/slider2.jpg";
 import slider3 from "../../assets/images/slider3.jpg";
 import "../../assets/css/pages/Slider.css";
 import { AiFillCaretRight } from "react-icons/ai";
+import { NavLink } from "react-router-dom";
 
 const Slider = () => {
     return (
@@ -57,13 +58,15 @@ const Slider = () => {
                     </div>
                 </div>
 
-                <button className="px-6 py-2 md:py-4 border-2 border-[#FFD32B] text-[#FFD32B] font-bold text-xl mt-2 md:ml-10 md:mt-10">Explore More</button>
+                <button className="px-6 py-2 md:py-4 border-2 border-[#FFD32B] text-[#FFD32B] font-bold text-xl mt-2 md:ml-10 md:mt-10"> <NavLink to="/register">Register Now</NavLink> </button>
             </div>
         </div>
     );
 };
 
 export default Slider;
+
+
 
 
 

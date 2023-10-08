@@ -88,7 +88,7 @@ const Footer = () => {
                 </div>
             </div>
             <hr className="w-[80%] mx-auto h-1 bg-yellow-600 mt-10" />
-            <h2 className="text-center mt-10 text-xl font-bold">All Rights Reserved by &copy; <span className="text-yellow-600">Mahibul Islam Ratul</span> </h2>
+            <h2 className="text-center mt-10 text-xl font-bold">All Rights Reserved by &copy; Language <span className="text-yellow-600">School</span> </h2>
         </div>
     );
 };
