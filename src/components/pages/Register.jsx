@@ -10,8 +10,9 @@ const Regsiter = () => {
 
     const [registerError, setRegisterError] = useState("");
 
+
     const navigate = useNavigate();
-    
+
 
 
     const handleRegister = e => {
@@ -22,6 +23,7 @@ const Regsiter = () => {
         const photo = form.get("photo");
         const email = form.get("email");
         const password = form.get("password");
+
         console.log(name, email, photo, password);
 
         // reset error
@@ -45,6 +47,12 @@ const Regsiter = () => {
                 });
         }
     }
+
+
+
+
+
+
 
     return (
         <>

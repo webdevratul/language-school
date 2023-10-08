@@ -11,6 +11,9 @@ import Regsiter from "../components/pages/Register";
 import Login from "../components/pages/Login";
 import PrivateRoutes from "./PrivateRoutes";
 import ServicesDetails from "../components/pages/ServicesDetails";
+import Error from "../components/layouts/Error";
+import Profile from "../components/pages/Profile";
+import Setting from "../components/pages/Setting";
 
 
 
@@ -18,6 +21,7 @@ const router = createBrowserRouter([
     {
         path: "/",
         element: <Root></Root>,
+        errorElement: <Error></Error>,
         children: [
             {
                 path: "/",
@@ -47,6 +51,14 @@ const router = createBrowserRouter([
                 path: '/servicesDetails/:id',
                 element: <PrivateRoutes><ServicesDetails></ServicesDetails></PrivateRoutes>,
                 loader: () => fetch("/public/services.json"),
+            },
+            {
+                path: '/profile',
+                element: <PrivateRoutes><Profile></Profile></PrivateRoutes>,
+            },
+            {
+                path: '/setting',
+                element: <PrivateRoutes><Setting></Setting></PrivateRoutes>,
             },
         ]
     },
