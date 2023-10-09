@@ -1,7 +1,7 @@
 
 const Subscribe = () => {
     return (
-        <div className="w-[70%] h-[50vh] bg-[#FFD32B] my-32 mx-auto rounded-lg relative text-center">
+        <div className="w-[70%] h-[50vh] bg-[#FFD32B] my-32 mx-auto rounded-lg relative text-center" data-aos="zoom-out-down">
             <div className="w-[100%] h-[50vh] bg-[#F7FF62] mx-auto mt-4 rounded-lg absolute left-[-2%] top-[-8%] flex flex-col justify-center items-center">
                 <div className="">
                     <h2 className=" text-2xl md:text-3xl lg:text-5xl font-bold py-4">Subscribe Now Forget 20% Discount <br /> Every Courses</h2>
@@ -17,4 +17,6 @@ const Subscribe = () => {
 };
 
 export default Subscribe;
+
+
 

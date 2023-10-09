@@ -8,7 +8,7 @@ import { NavLink } from "react-router-dom";
 const Slider = () => {
     return (
         <div className="relative">
-            <div className="carousel w-full h-[70vh]">
+            <div className="carousel w-full h-[82vh]">
                 <div id="slide1" className="carousel-item relative w-full">
                     <img src={slider1} className="w-full object-cover image z-10" />
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-20">
