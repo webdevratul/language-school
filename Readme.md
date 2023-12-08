@@ -1,4 +1,4 @@
-# Welcome to [Your Language School's Name]
+# Welcome to Language School
 
 ## Features
 
