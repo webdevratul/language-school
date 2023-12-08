@@ -50,11 +50,10 @@ const Provider = ({ children }) => {
             setUser(currentUser);
             setLoading(false);
         });
-
         return () => {
             unSubscribe();
         }
-    }, [])
+    }, []);
 
     const Info = { createuser, signIn, user, logOut, googleSignIn, profileUpdate, loading }
 

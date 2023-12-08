@@ -60,7 +60,6 @@ const Regsiter = () => {
                 <div className="hero-content flex-col">
                     <div className="card flex-shrink-0 w-[100%] max-w-sm shadow-2xl bg-base-400">
                         <form onSubmit={handleRegister} className="card-body">
-
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Name</span>

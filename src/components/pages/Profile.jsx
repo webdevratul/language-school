@@ -6,7 +6,7 @@ const Profile = () => {
     const { user } = useContext(Context);
     return (
         <div>
-            <div className="w-[350px] h-[30vh] bg-yellow-50 mx-auto my-20 rounded-lg shadow-lg cursor-pointer p-4">
+            <div className="w-[350px] bg-yellow-50 mx-auto my-20 rounded-lg shadow-lg cursor-pointer p-4">
                 <div className="my-6">
                     <div className="w-[100px] h-[100px] mx-auto mb-4">
                         <img className="w-[100%] h-[100px] border-4 border-yellow-600 rounded-full object-cover" src={user.photoURL} alt="" />
